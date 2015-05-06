@@ -7,13 +7,4 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-//! Project version number for MediaKeys.
-FOUNDATION_EXPORT double MediaKeysVersionNumber;
-
-//! Project version string for MediaKeys.
-FOUNDATION_EXPORT const unsigned char MediaKeysVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <MediaKeys/PublicHeader.h>
-
-
+#import <MediaKeys/SPMediaKeyTap.h>

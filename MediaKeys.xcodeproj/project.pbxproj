@@ -8,27 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3BFB22051AFA035300127AF1 /* MediaKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFB22041AFA035300127AF1 /* MediaKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BFB220B1AFA035300127AF1 /* MediaKeys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFB21FF1AFA035300127AF1 /* MediaKeys.framework */; };
-		3BFB22121AFA035300127AF1 /* MediaKeysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB22111AFA035300127AF1 /* MediaKeysTests.m */; };
+		3BFB22201AFA03D400127AF1 /* SPMediaKeyTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFB221D1AFA03D400127AF1 /* SPMediaKeyTap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BFB22211AFA03D400127AF1 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB221E1AFA03D400127AF1 /* SPMediaKeyTap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3BFB22251AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFB22231AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.h */; };
+		3BFB22261AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB22241AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3BFB22281AFA046F00127AF1 /* MediaKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB22271AFA046F00127AF1 /* MediaKeys.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3BFB220C1AFA035300127AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3BFB21F61AFA035300127AF1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BFB21FE1AFA035300127AF1;
-			remoteInfo = MediaKeys;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3BFB21FF1AFA035300127AF1 /* MediaKeys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaKeys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFB22031AFA035300127AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BFB22041AFA035300127AF1 /* MediaKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaKeys.h; sourceTree = "<group>"; };
-		3BFB220A1AFA035300127AF1 /* MediaKeysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaKeysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BFB22101AFA035300127AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BFB22111AFA035300127AF1 /* MediaKeysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaKeysTests.m; sourceTree = "<group>"; };
+		3BFB221D1AFA03D400127AF1 /* SPMediaKeyTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMediaKeyTap.h; path = Vendor/SPMediaKeyTap/SPMediaKeyTap.h; sourceTree = "<group>"; };
+		3BFB221E1AFA03D400127AF1 /* SPMediaKeyTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMediaKeyTap.m; path = Vendor/SPMediaKeyTap/SPMediaKeyTap.m; sourceTree = "<group>"; };
+		3BFB22231AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SPInvocationGrabbing.h"; path = "Vendor/SPMediaKeyTap/SPInvocationGrabbing/NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
+		3BFB22241AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SPInvocationGrabbing.m"; path = "Vendor/SPMediaKeyTap/SPInvocationGrabbing/NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
+		3BFB22271AFA046F00127AF1 /* MediaKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,14 +34,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BFB22071AFA035300127AF1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BFB220B1AFA035300127AF1 /* MediaKeys.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,7 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				3BFB22011AFA035300127AF1 /* MediaKeys */,
-				3BFB220E1AFA035300127AF1 /* MediaKeysTests */,
+				3BFB221B1AFA03BD00127AF1 /* Vendor */,
 				3BFB22001AFA035300127AF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				3BFB21FF1AFA035300127AF1 /* MediaKeys.framework */,
-				3BFB220A1AFA035300127AF1 /* MediaKeysTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,34 +58,29 @@
 			isa = PBXGroup;
 			children = (
 				3BFB22041AFA035300127AF1 /* MediaKeys.h */,
-				3BFB22021AFA035300127AF1 /* Supporting Files */,
+				3BFB22271AFA046F00127AF1 /* MediaKeys.swift */,
+				3BFB22031AFA035300127AF1 /* Info.plist */,
 			);
 			path = MediaKeys;
 			sourceTree = "<group>";
 		};
-		3BFB22021AFA035300127AF1 /* Supporting Files */ = {
+		3BFB221B1AFA03BD00127AF1 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				3BFB22031AFA035300127AF1 /* Info.plist */,
+				3BFB221C1AFA03C500127AF1 /* SPMediaKeyTap */,
 			);
-			name = "Supporting Files";
+			name = Vendor;
 			sourceTree = "<group>";
 		};
-		3BFB220E1AFA035300127AF1 /* MediaKeysTests */ = {
+		3BFB221C1AFA03C500127AF1 /* SPMediaKeyTap */ = {
 			isa = PBXGroup;
 			children = (
-				3BFB22111AFA035300127AF1 /* MediaKeysTests.m */,
-				3BFB220F1AFA035300127AF1 /* Supporting Files */,
+				3BFB221D1AFA03D400127AF1 /* SPMediaKeyTap.h */,
+				3BFB221E1AFA03D400127AF1 /* SPMediaKeyTap.m */,
+				3BFB22231AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.h */,
+				3BFB22241AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.m */,
 			);
-			path = MediaKeysTests;
-			sourceTree = "<group>";
-		};
-		3BFB220F1AFA035300127AF1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BFB22101AFA035300127AF1 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = SPMediaKeyTap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +90,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFB22251AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.h in Headers */,
+				3BFB22201AFA03D400127AF1 /* SPMediaKeyTap.h in Headers */,
 				3BFB22051AFA035300127AF1 /* MediaKeys.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,24 +117,6 @@
 			productReference = 3BFB21FF1AFA035300127AF1 /* MediaKeys.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BFB22091AFA035300127AF1 /* MediaKeysTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BFB22181AFA035300127AF1 /* Build configuration list for PBXNativeTarget "MediaKeysTests" */;
-			buildPhases = (
-				3BFB22061AFA035300127AF1 /* Sources */,
-				3BFB22071AFA035300127AF1 /* Frameworks */,
-				3BFB22081AFA035300127AF1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3BFB220D1AFA035300127AF1 /* PBXTargetDependency */,
-			);
-			name = MediaKeysTests;
-			productName = MediaKeysTests;
-			productReference = 3BFB220A1AFA035300127AF1 /* MediaKeysTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,9 +127,6 @@
 				ORGANIZATIONNAME = "Caleb Davenport";
 				TargetAttributes = {
 					3BFB21FE1AFA035300127AF1 = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
-					3BFB22091AFA035300127AF1 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -182,20 +144,12 @@
 			projectRoot = "";
 			targets = (
 				3BFB21FE1AFA035300127AF1 /* MediaKeys */,
-				3BFB22091AFA035300127AF1 /* MediaKeysTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3BFB21FD1AFA035300127AF1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BFB22081AFA035300127AF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,26 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BFB22061AFA035300127AF1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BFB22121AFA035300127AF1 /* MediaKeysTests.m in Sources */,
+				3BFB22281AFA046F00127AF1 /* MediaKeys.swift in Sources */,
+				3BFB22261AFA03DB00127AF1 /* NSObject+SPInvocationGrabbing.m in Sources */,
+				3BFB22211AFA03D400127AF1 /* SPMediaKeyTap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3BFB220D1AFA035300127AF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3BFB21FE1AFA035300127AF1 /* MediaKeys */;
-			targetProxy = 3BFB220C1AFA035300127AF1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3BFB22131AFA035300127AF1 /* Debug */ = {
@@ -249,7 +190,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -271,8 +211,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -294,7 +232,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -309,18 +246,15 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 		3BFB22161AFA035300127AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = MediaKeys/Info.plist;
@@ -328,16 +262,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3BFB22171AFA035300127AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = MediaKeys/Info.plist;
@@ -345,38 +279,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		3BFB22191AFA035300127AF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MediaKeysTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		3BFB221A1AFA035300127AF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MediaKeysTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -399,14 +301,7 @@
 				3BFB22171AFA035300127AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		3BFB22181AFA035300127AF1 /* Build configuration list for PBXNativeTarget "MediaKeysTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BFB22191AFA035300127AF1 /* Debug */,
-				3BFB221A1AFA035300127AF1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
